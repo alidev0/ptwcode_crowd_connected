@@ -45,5 +45,21 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+
+	<key>NSLocationWhenInUseUsageDescription</key> 
+	<string>YOUR DESCRIPTIVE TEXT HERE</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key> 
+	<string>YOUR DESCRIPTIVE TEXT HERE</string>
+	<key>UIBackgroundModes</key>
+	<array>
+	<string>location</string>
+	</array>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>YOUR DESCRIPTIVE TEXT HERE</string>
+	<key>UIBackgroundModes</key>
+	<array>
+    <string>bluetooth-central</string>
+	</array>
+	
 </dict>
 </plist>

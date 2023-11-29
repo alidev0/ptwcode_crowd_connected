@@ -1,5 +1,8 @@
 import Flutter
 import UIKit
+import CrowdConnectedCore
+import CrowdConnectedGeo
+import CrowdConnectedIPS
 
 public class PtwcodeCrowdConnectedPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
@@ -12,6 +15,17 @@ public class PtwcodeCrowdConnectedPlugin: NSObject, FlutterPlugin {
     switch call.method {
     case "getPlatformVersion":
       result("iOS " + UIDevice.current.systemVersion)
+        
+    case "start":
+        let args:  Dictionary<String,String> = call.arguments as! Dictionary<String, String>
+        let appKey: String =   args["app_key"]! as String
+        let publicToken: String =   args["public_token"]! as String
+        let secretToken: String =   args["secret_token"]! as String
+        
+        CrowdConnectedGeo.activate()
+        CrowdConnectedIPS.activate()
+        CrowdConnected.shared.start(appKey: appKey, token: publicToken, secret: secretToken) { deviceId, error in  NSLog("deviceId: \(deviceId)");  NSLog("error: \(error)") }
+    
     default:
       result(FlutterMethodNotImplemented)
     }
