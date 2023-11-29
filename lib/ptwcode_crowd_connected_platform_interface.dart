@@ -8,7 +8,8 @@ abstract class PtwcodeCrowdConnectedPlatform extends PlatformInterface {
 
   static final Object _token = Object();
 
-  static PtwcodeCrowdConnectedPlatform _instance = MethodChannelPtwcodeCrowdConnected();
+  static PtwcodeCrowdConnectedPlatform _instance =
+      MethodChannelPtwcodeCrowdConnected();
 
   /// The default instance of [PtwcodeCrowdConnectedPlatform] to use.
   ///
@@ -25,5 +26,13 @@ abstract class PtwcodeCrowdConnectedPlatform extends PlatformInterface {
 
   Future<String?> getPlatformVersion() {
     throw UnimplementedError('platformVersion() has not been implemented.');
+  }
+
+  Future<void> start({
+    required String appKey,
+    required String publicToken,
+    required String secretToken,
+  }) {
+    throw UnimplementedError('start() has not been implemented.');
   }
 }

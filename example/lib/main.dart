@@ -1,7 +1,10 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
+import 'package:permission_handler/permission_handler.dart';
 import 'package:ptwcode_crowd_connected/ptwcode_crowd_connected.dart';
 
 void main() {
@@ -47,6 +50,32 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
+  void _onTapPermission() async {
+    final locationWhenInUse = await Permission.locationWhenInUse.request();
+    debugPrint('====> Permission.locationWhenInUse: $locationWhenInUse');
+
+    if (Platform.isAndroid) {
+      final bluetoothScan = await Permission.bluetoothScan.request();
+      debugPrint('====> Permission.bluetoothScan: $bluetoothScan');
+    }
+
+    if (Platform.isIOS) {
+      final bluetooth = await Permission.bluetooth.request();
+      debugPrint('====> Permission.bluetooth: $bluetooth');
+    }
+  }
+
+  void _startService() async {
+    await _ptwcodeCrowdConnectedPlugin.start(
+      // TODO add appKey here
+      appKey: '',
+      // TODO add publicToken here
+      publicToken: '',
+      // TODO add secretToken here
+      secretToken: '',
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -54,8 +83,19 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: const Text('Plugin example app'),
         ),
-        body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+        body: Column(
+          children: [
+            const Row(children: []),
+            Text('Running on: $_platformVersion\n'),
+            TextButton(
+              onPressed: _onTapPermission,
+              child: const Text('Request Permissions'),
+            ),
+            TextButton(
+              onPressed: _startService,
+              child: const Text('Start Service'),
+            ),
+          ],
         ),
       ),
     );
