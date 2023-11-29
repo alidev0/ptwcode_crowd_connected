@@ -1,15 +1,11 @@
 # ptwcode_crowd_connected
 
-A new Flutter plugin project.
+This is NOT an official crowd_connected package.
+
+This package implements the native crowd_connected SDKs for Android and IOS.
 
 ## Getting Started
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+Please refer to the example app for details.
 
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
+For detailed information go to the the [official source](https://support.crowdconnected.com/hc/en-us/categories/360003626398-Developers)
