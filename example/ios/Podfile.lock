@@ -1,0 +1,89 @@
+PODS:
+  - AWSAuthCore (2.33.5):
+    - AWSCore (= 2.33.5)
+  - AWSCognitoIdentityProvider (2.33.5):
+    - AWSCognitoIdentityProviderASF (= 2.33.5)
+    - AWSCore (= 2.33.5)
+  - AWSCognitoIdentityProviderASF (2.33.5):
+    - AWSCore (= 2.33.5)
+  - AWSCore (2.33.5)
+  - AWSKinesis (2.33.5):
+    - AWSCore (= 2.33.5)
+  - AWSMobileClient (2.33.5):
+    - AWSAuthCore (= 2.33.5)
+    - AWSCognitoIdentityProvider (= 2.33.5)
+    - AWSCognitoIdentityProviderASF (= 2.33.5)
+    - AWSCore (= 2.33.5)
+  - AWSPinpoint (2.33.5):
+    - AWSCore (= 2.33.5)
+  - CrowdConnectedCore (1.6.1):
+    - AWSKinesis
+    - AWSMobileClient
+    - AWSPinpoint
+    - CrowdConnectedShared
+  - CrowdConnectedGeo (1.6.1):
+    - CrowdConnectedShared
+  - CrowdConnectedIPS (1.6.1):
+    - CrowdConnectedShared
+  - CrowdConnectedShared (1.6.1)
+  - Flutter (1.0.0)
+  - integration_test (0.0.1):
+    - Flutter
+  - permission_handler_apple (9.1.1):
+    - Flutter
+  - ptwcode_crowd_connected (0.0.1):
+    - CrowdConnectedCore (~> 1.6.1)
+    - CrowdConnectedGeo (~> 1.6.1)
+    - CrowdConnectedIPS (~> 1.6.1)
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - integration_test (from `.symlinks/plugins/integration_test/ios`)
+  - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
+  - ptwcode_crowd_connected (from `.symlinks/plugins/ptwcode_crowd_connected/ios`)
+
+SPEC REPOS:
+  trunk:
+    - AWSAuthCore
+    - AWSCognitoIdentityProvider
+    - AWSCognitoIdentityProviderASF
+    - AWSCore
+    - AWSKinesis
+    - AWSMobileClient
+    - AWSPinpoint
+    - CrowdConnectedCore
+    - CrowdConnectedGeo
+    - CrowdConnectedIPS
+    - CrowdConnectedShared
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  integration_test:
+    :path: ".symlinks/plugins/integration_test/ios"
+  permission_handler_apple:
+    :path: ".symlinks/plugins/permission_handler_apple/ios"
+  ptwcode_crowd_connected:
+    :path: ".symlinks/plugins/ptwcode_crowd_connected/ios"
+
+SPEC CHECKSUMS:
+  AWSAuthCore: f80d57f22ad0c781082658de8f941393ea21b955
+  AWSCognitoIdentityProvider: 5eeb67304ea7ac853836d685f2b50c08d3194155
+  AWSCognitoIdentityProviderASF: aaa2eb46b9775090081b33fb5134090ba253e889
+  AWSCore: 6d8aa46c210e37f15c10509437a9c8570f7290bd
+  AWSKinesis: 0729b3aaca1efbb17d4253bc49e4c53bf99acdee
+  AWSMobileClient: 07c4cf156a1b3715cdf15493cdf11aade97d2369
+  AWSPinpoint: 86e99df82096f9ee5eca59711f6628abc92aa415
+  CrowdConnectedCore: 5a44578cdcaced47f2b8384b95310fbd28d73d19
+  CrowdConnectedGeo: c86bf86745e5e1c67c8b0d9d8b51629b03082c58
+  CrowdConnectedIPS: 8f150033148767e0fc5989d0e588e8db7b78bc45
+  CrowdConnectedShared: b4847336bd86fcabd886dcfd3b2a13b40062a4e7
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  integration_test: 13825b8a9334a850581300559b8839134b124670
+  permission_handler_apple: e76247795d700c14ea09e3a2d8855d41ee80a2e6
+  ptwcode_crowd_connected: aa7646ccf9f553cf0dd96139714bcea3eabc9a4f
+
+PODFILE CHECKSUM: 68e55aaab56381688c33ca51f1bde39021330105
+
+COCOAPODS: 1.14.3
