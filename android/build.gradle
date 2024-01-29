@@ -68,7 +68,7 @@ android {
 }
 
 dependencies {
-    implementation 'net.crowdconnected.android.core:android-core:1.3.4'
-    implementation 'net.crowdconnected.android.ips:android-ips:1.3.4'
-    implementation 'net.crowdconnected.android.geo:android-geo:1.3.4'
+    implementation 'net.crowdconnected.android.core:android-core:1.4.0'
+    implementation 'net.crowdconnected.android.ips:android-ips:1.4.0'
+    implementation 'net.crowdconnected.android.geo:android-geo:1.4.0'
 }
