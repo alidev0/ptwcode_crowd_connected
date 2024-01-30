@@ -73,4 +73,8 @@ class CustomStatusCallback : StatusCallback {
   override fun onStartUpSuccess() {
     Log.i("onStartUpSuccess", "onStartUpSuccess")
   }
+
+  override fun onRuntimeError(p0: String?) {
+    Log.i("onRuntimeError", "onRuntimeError: $p0")
+  }
 }

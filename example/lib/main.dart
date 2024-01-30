@@ -55,6 +55,9 @@ class _MyAppState extends State<MyApp> {
     final locationWhenInUse = await Permission.locationWhenInUse.request();
     debugPrint('====> Permission.locationWhenInUse: $locationWhenInUse');
 
+    final locationAlways = await Permission.locationAlways.request();
+    debugPrint('====> Permission.locationAlways: $locationAlways');
+
     if (Platform.isAndroid) {
       final bluetoothScan = await Permission.bluetoothScan.request();
       debugPrint('====> Permission.bluetoothScan: $bluetoothScan');

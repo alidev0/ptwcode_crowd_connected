@@ -2,7 +2,7 @@ group 'ptwcode.ptwcode_crowd_connected'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '1.7.10'
+    ext.kotlin_version = '1.9.0'
     repositories {
         google()
         mavenCentral()
