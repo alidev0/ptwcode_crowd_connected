@@ -1,3 +1,6 @@
+## 1.0.4
+- fix build
+
 ## 1.0.3
 - update android sdk to 1.4.0
 

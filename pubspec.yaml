@@ -1,6 +1,6 @@
 name: ptwcode_crowd_connected
 description: This package implements native crowd_connected SDKs for Android and IOS.
-version: 1.0.3
+version: 1.0.4
 repository: https://github.com/alidev0/ptwcode_crowd_connected
 
 environment:
