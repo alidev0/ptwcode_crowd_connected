@@ -1,4 +1,4 @@
-## 1.0.4
+## 1.0.5
 - set permission.ACCESS_BACKGROUND_LOCATION locally
 
 ## 1.0.4
